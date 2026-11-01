@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <data name="grille.Location" type="System.Drawing.Point, System.Drawing"><value>10, 40</value></data>
+  <data name="grille.Size" type="System.Drawing.Size, System.Drawing"><value>400, 200</value></data>
+  <data name="titre.Location" type="System.Drawing.Point, System.Drawing"><value>10, 10</value></data>
+  <data name="titre.Size" type="System.Drawing.Size, System.Drawing"><value>200, 20</value></data>
+  <data name="titre.Text" xml:space="preserve"><value>Historique &amp;&amp; tendances</value></data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing"><value>420, 250</value></data>
+  <data name="$this.Text" xml:space="preserve"><value>Ancien poste</value></data>
+</root>

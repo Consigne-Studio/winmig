@@ -1,0 +1,112 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>OPC UA Reference Client · maquettes web</title>
+<style>
+*{box-sizing:border-box;margin:0}
+body{font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1f2933;background:#e9edf1}
+.ecran{width:1440px;height:900px;display:flex;flex-direction:column;background:#f6f8fa;overflow:hidden}
+header{display:flex;align-items:center;gap:16px;height:56px;padding:0 20px;background:#14324a;color:#fff}
+header b{font-size:16px;letter-spacing:.01em}
+header .sp{flex:1}
+header .u{font-size:13px;opacity:.85}
+.barre{display:flex;align-items:center;gap:12px;padding:12px 20px;background:#fff;border-bottom:1px solid #d9e0e7}
+.champ{display:flex;align-items:center;gap:8px;border:1px solid #c5ced8;border-radius:6px;padding:0 10px;height:36px;background:#fff;min-width:420px;color:#3e4c59}
+.champ small{color:#7b8794}
+select,.btn{height:36px;border-radius:6px;border:1px solid #c5ced8;background:#fff;padding:0 12px;font:inherit;color:#1f2933}
+.btn.p{background:#1769aa;border-color:#1769aa;color:#fff;font-weight:600}
+.etat{display:flex;align-items:center;gap:8px;margin-left:auto;font-size:13px;color:#3e4c59}
+.pt{width:9px;height:9px;border-radius:50%;background:#2e9e5b;box-shadow:0 0 0 3px #d5f0df}
+main{flex:1;display:grid;grid-template-columns:380px 1fr;min-height:0}
+aside{border-right:1px solid #d9e0e7;background:#fff;display:flex;flex-direction:column;min-height:0}
+aside h2,section h2{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#616e7c;font-weight:600;padding:14px 16px 8px}
+.rech{margin:0 16px 8px;height:34px;border:1px solid #c5ced8;border-radius:6px;padding:0 10px;display:flex;align-items:center;color:#9aa5b1}
+ul.arbre{list-style:none;padding:0 8px 12px;overflow:hidden}
+ul.arbre li{display:flex;align-items:center;gap:6px;height:30px;padding:0 8px;border-radius:5px;color:#323f4b;white-space:nowrap}
+ul.arbre li i{font-style:normal;width:14px;color:#7b8794;font-size:11px}
+ul.arbre li .ic{width:16px;height:16px;border-radius:3px;background:#dbe7f3;border:1px solid #a7c2dc}
+ul.arbre li .ic.v{background:#e3f5ea;border-color:#9fd5b3;border-radius:50%}
+ul.arbre li.sel{background:#e3effa;color:#0b4f85;font-weight:600}
+section{display:flex;flex-direction:column;min-height:0;padding:0 20px 20px}
+.titre{display:flex;align-items:baseline;gap:12px;padding:16px 0 12px}
+.titre h1{font-size:22px;font-weight:650}
+.titre code{font:12.5px ui-monospace,Consolas,monospace;color:#616e7c;background:#eef1f4;padding:2px 6px;border-radius:4px}
+.cartes{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:16px}
+.carte{background:#fff;border:1px solid #d9e0e7;border-radius:8px;padding:12px 14px}
+.carte small{display:block;color:#7b8794;font-size:12px;margin-bottom:4px}
+.carte b{font-size:22px;font-weight:650}
+.carte b em{font-style:normal;font-size:13px;color:#616e7c;font-weight:500;margin-left:4px}
+.carte .live{float:right;font-size:11px;color:#2e9e5b;font-weight:600}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #d9e0e7;border-radius:8px;overflow:hidden}
+th{text-align:left;font-size:12px;color:#616e7c;font-weight:600;background:#f0f3f6;padding:9px 14px;border-bottom:1px solid #d9e0e7}
+td{padding:9px 14px;border-bottom:1px solid #edf0f3}
+td.m{font-family:ui-monospace,Consolas,monospace;font-size:13px}
+td .tag{font-size:11.5px;padding:2px 7px;border-radius:10px;background:#eef1f4;color:#3e4c59}
+.foot{display:flex;justify-content:space-between;color:#7b8794;font-size:12px;padding-top:10px}
+.voile{position:absolute;inset:0;background:rgba(15,30,45,.38)}
+.dlg{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:640px;background:#fff;border-radius:10px;box-shadow:0 20px 50px rgba(0,0,0,.25)}
+.dlg h3{font-size:18px;padding:18px 22px 4px}
+.dlg p.s{color:#616e7c;font-size:13px;padding:0 22px 12px}
+.dlg .corps{padding:4px 22px 16px;display:grid;gap:12px}
+.lgn{display:grid;grid-template-columns:160px 1fr;align-items:center;gap:12px}
+.lgn label{color:#3e4c59;font-size:13px}
+.inp{height:36px;border:1px solid #c5ced8;border-radius:6px;padding:0 10px;display:flex;align-items:center;font-family:ui-monospace,Consolas,monospace;font-size:13px}
+.inp.f{border-color:#1769aa;box-shadow:0 0 0 3px #d4e6f6}
+.aide{font-size:12px;color:#2e7d4f}
+.pied{display:flex;justify-content:flex-end;gap:10px;padding:14px 22px;border-top:1px solid #edf0f3;background:#fafbfc;border-radius:0 0 10px 10px}
+.rel{position:relative}
+</style></head><body>
+<div class="ecran" id="principale">
+<header><b>OPC UA Reference Client</b><span class="u">Navigateur web · aucune installation</span><span class="sp"></span><span class="u">Opérateur : m.durand</span></header>
+<div class="barre"><div class="champ"><small>Serveur</small> opc.tcp://ligne-3.usine.local:4840</div><select><option>Sécurité : Basic256Sha256 · Signer et chiffrer</option></select><button class="btn p">Déconnecter</button><span class="etat"><span class="pt"></span>Connecté par la passerelle · session 00:42:17</span></div>
+<main>
+<aside><h2>Espace d'adresses</h2><div class="rech">Rechercher un nœud…</div>
+<ul class="arbre">
+<li><i>▾</i><span class="ic"></span>Objects</li>
+<li style="padding-left:24px"><i>▾</i><span class="ic"></span>Ligne3</li>
+<li style="padding-left:40px"><i>▾</i><span class="ic"></span>Four_F1</li>
+<li class="sel" style="padding-left:56px"><i></i><span class="ic v"></span>Temperature_Zone2</li>
+<li style="padding-left:56px"><i></i><span class="ic v"></span>Temperature_Consigne</li>
+<li style="padding-left:56px"><i></i><span class="ic v"></span>Debit_Gaz</li>
+<li style="padding-left:56px"><i>▸</i><span class="ic"></span>Alarmes</li>
+<li style="padding-left:40px"><i>▸</i><span class="ic"></span>Convoyeur_C2</li>
+<li style="padding-left:40px"><i>▸</i><span class="ic"></span>Presse_P4</li>
+<li style="padding-left:24px"><i>▸</i><span class="ic"></span>Server</li>
+<li style="padding-left:8px"><i>▸</i><span class="ic"></span>Types</li>
+<li style="padding-left:8px"><i>▸</i><span class="ic"></span>Views</li>
+</ul></aside>
+<section>
+<div class="titre"><h1>Temperature_Zone2</h1><code>ns=2;s=Ligne3.Four_F1.Temperature_Zone2</code></div>
+<div class="cartes">
+<div class="carte"><small>Valeur <span class="live">● en direct</span></small><b>842,6<em>°C</em></b></div>
+<div class="carte"><small>Qualité</small><b style="color:#2e7d4f">Good</b></div>
+<div class="carte"><small>Horodatage source</small><b style="font-size:17px">14:32:08,415</b></div>
+<div class="carte"><small>Type de donnée</small><b style="font-size:17px">Double</b></div>
+</div>
+<table><thead><tr><th style="width:28%">Attribut</th><th style="width:34%">Valeur</th><th>Type de donnée</th><th style="width:110px"></th></tr></thead><tbody>
+<tr><td>NodeId</td><td class="m">ns=2;s=Ligne3.Four_F1.Temperature_Zone2</td><td>NodeId</td><td></td></tr>
+<tr><td>BrowseName</td><td class="m">2:Temperature_Zone2</td><td>QualifiedName</td><td></td></tr>
+<tr><td>DisplayName</td><td>Température zone 2</td><td>LocalizedText</td><td></td></tr>
+<tr><td>Value</td><td class="m">842.6</td><td>Double</td><td><span class="tag">Écrire…</span></td></tr>
+<tr><td>AccessLevel</td><td>Lecture, écriture, historique</td><td>Byte</td><td></td></tr>
+<tr><td>MinimumSamplingInterval</td><td class="m">250 ms</td><td>Duration</td><td></td></tr>
+<tr><td>Historizing</td><td>Oui</td><td>Boolean</td><td><span class="tag">Historique</span></td></tr>
+<tr><td>EngineeringUnits</td><td>°C (degré Celsius)</td><td>EUInformation</td><td></td></tr>
+</tbody></table>
+<div class="carte" style="margin-top:16px"><small>Tendance sur 15 minutes · consigne 850 °C</small><svg width="100%" height="174" viewBox="0 -8 980 174" preserveAspectRatio="none"><line x1="0" x2="980" y1="34.6" y2="34.6" stroke="#9aa5b1" stroke-dasharray="5 4"/><polyline points="0.0,84.3 11.0,89.9 22.0,89.7 33.0,94.0 44.0,99.6 55.1,98.5 66.1,88.0 77.1,80.5 88.1,74.2 99.1,78.5 110.1,76.6 121.1,79.7 132.1,84.4 143.1,90.0 154.2,93.2 165.2,82.9 176.2,75.3 187.2,68.7 198.2,62.7 209.2,68.4 220.2,71.5 231.2,68.5 242.2,63.9 253.3,57.3 264.3,50.8 275.3,59.4 286.3,57.8 297.3,55.1 308.3,55.6 319.3,62.2 330.3,62.8 341.3,70.4 352.4,61.8 363.4,55.2 374.4,55.0 385.4,59.4 396.4,52.1 407.4,51.7 418.4,45.6 429.4,40.6 440.4,42.3 451.5,45.6 462.5,45.2 473.5,47.9 484.5,55.4 495.5,59.6 506.5,54.2 517.5,63.4 528.5,71.7 539.6,68.7 550.6,72.4 561.6,71.0 572.6,70.9 583.6,73.2 594.6,63.3 605.6,68.9 616.6,70.1 627.6,75.1 638.7,71.7 649.7,75.1 660.7,76.9 671.7,71.2 682.7,73.9 693.7,72.0 704.7,63.9 715.7,71.2 726.7,78.7 737.8,82.5 748.8,76.0 759.8,72.9 770.8,77.0 781.8,79.0 792.8,83.7 803.8,82.9 814.8,89.8 825.8,84.0 836.9,75.1 847.9,65.7 858.9,61.2 869.9,52.9 880.9,62.7 891.9,66.6 902.9,57.8 913.9,53.1 924.9,55.6 936.0,48.1 947.0,47.1 958.0,42.5 969.0,48.0 980.0,54.9" fill="none" stroke="#1769aa" stroke-width="2"/><text x="0" y="164" font-size="11" fill="#7b8794">14:17</text><text x="980" y="164" font-size="11" fill="#7b8794" text-anchor="end">14:32</text></svg></div>
+<div class="foot"><span>Valeurs poussées par la passerelle (SignalR), sans rafraîchir la page.</span><span>Maquette · données fictives</span></div>
+</section></main></div>
+
+<div class="ecran rel" id="dialogue" style="margin-top:40px">
+<header><b>OPC UA Reference Client</b><span class="u">Navigateur web · aucune installation</span><span class="sp"></span><span class="u">Opérateur : m.durand</span></header>
+<div class="barre"><div class="champ"><small>Serveur</small> opc.tcp://ligne-3.usine.local:4840</div><select><option>Sécurité : Basic256Sha256 · Signer et chiffrer</option></select><button class="btn p">Déconnecter</button><span class="etat"><span class="pt"></span>Connecté par la passerelle · session 00:42:17</span></div>
+<main style="filter:saturate(.7)"><aside><h2>Espace d'adresses</h2></aside><section><div class="titre"><h1>Temperature_Consigne</h1></div></section></main>
+<div class="voile"></div>
+<div class="dlg"><h3>Écrire une valeur</h3><p class="s">Temperature_Consigne · ns=2;s=Ligne3.Four_F1.Temperature_Consigne</p>
+<div class="corps">
+<div class="lgn"><label>Type de donnée</label><div class="inp" style="font-family:inherit">Double</div></div>
+<div class="lgn"><label>Valeur actuelle</label><div class="inp" style="color:#616e7c">850.0</div></div>
+<div class="lgn"><label>Nouvelle valeur</label><div class="inp f">860.0</div></div>
+<div class="lgn"><label></label><span class="aide">Dans la plage autorisée par le serveur : 600 à 900 °C.</span></div>
+<div class="lgn"><label>Motif (journal)</label><div class="inp" style="font-family:inherit;color:#3e4c59">Réglage demandé par le chef de poste</div></div>
+</div>
+<div class="pied"><button class="btn">Annuler</button><button class="btn p">Écrire sur le serveur</button></div></div>
+</div>
+</body></html>

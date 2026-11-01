@@ -1,0 +1,95 @@
+﻿Projet;Classe;Techno;Nature;Titre;Contrôles;Événements;Liaisons;Lignes de logique;Branches;Contrôles tiers;Composants internes;Utilisé par;Points d'attention;Score;Classe de complexité;Unités
+UA Client Controls;Opc.Ua.Client.Controls.AttributeListCtrl;WinForms;Composant;;0;0;0;287;48;;0;1;;43,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.AttributesListViewCtrl;WinForms;Composant;;3;2;0;204;23;;0;1;W18;32,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.BaseListCtrl;WinForms;Composant;;1;7;0;526;72;;0;0;W11 W18;86,1;L;2
+UA Client Controls;Opc.Ua.Client.Controls.BaseTreeCtrl;WinForms;Composant;;1;8;0;244;24;;0;0;W11 W18;45,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.BrowseListCtrl;WinForms;Composant;;0;0;0;88;9;;0;1;;10,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.BrowseNodeCtrl;WinForms;Composant;;3;0;0;93;0;;2;5;W18;9,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.BrowseTreeCtrl;WinForms;Composant;;7;5;0;348;45;;1;1;;62,7;M;1
+UA Client Controls;Opc.Ua.Client.Controls.BrowseTreeViewCtrl;WinForms;Composant;;3;3;0;331;39;;0;2;W18;50,6;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CallRequestDlg;WinForms;Dialogue;Call Method;5;3;0;79;4;;1;0;W18;18,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.CallRequestListViewCtrl;WinForms;Composant;;4;2;0;269;35;;0;1;W14 W18;43,4;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CertificateDlg;WinForms;Dialogue;View Certificate;8;1;0;98;13;;2;0;W18;23;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.CertificateListCtrl;WinForms;Composant;;9;4;0;402;56;;0;1;W11 W18;71,8;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CertificateListDlg;WinForms;Dialogue;Manage Certificates in Certificate Store;22;4;0;110;12;;2;0;W18;43,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CertificatePropertiesListCtrl;WinForms;Composant;;0;0;0;182;22;;0;1;W18;23,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.CertificateStoreCtrl;WinForms;Composant;;7;5;0;230;24;;0;4;W09 W18;44,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CertificateStoreDlg;WinForms;Dialogue;Select Certificate Store;6;2;0;54;4;;1;0;W18;15,6;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.CertificateStoreTreeCtrl;WinForms;Composant;;3;2;0;332;35;;0;1;W11 W18;46,6;M;1
+UA Client Controls;Opc.Ua.Client.Controls.CertificateStoreTreeDlg;WinForms;Dialogue;Open Certificate Store;5;2;0;41;3;;1;0;W18;13,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ClientUtils;WinForms;Composant;;0;0;0;482;84;;0;0;W18;74,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.Common.EditComplexValueCtrl;WinForms;Composant;;3;3;0;892;156;;0;1;W14 W18;146,5;L;2
+UA Client Controls;Opc.Ua.Client.Controls.ComplexValueEditDlg;WinForms;Dialogue;Edit Value;5;1;0;57;3;;1;0;W18;12,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ConfiguredServerDlg;WinForms;Dialogue;Server Configuration;33;5;0;1337;210;;0;0;W07 W18;237,1;XL;3
+UA Client Controls;Opc.Ua.Client.Controls.ConfiguredServerListCtrl;WinForms;Composant;;4;3;0;157;16;;0;1;W18;28,5;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ConfiguredServerListDlg;WinForms;Dialogue;Configure Servers;5;2;0;69;6;;1;0;W18;16,6;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ConnectServerCtrl;WinForms;Composant;;3;1;0;368;30;;0;2;W07 W18;44,5;M;1
+UA Client Controls;Opc.Ua.Client.Controls.DataListCtrl;WinForms;Composant;;6;6;0;687;146;;0;1;W18;136,8;L;2
+UA Client Controls;Opc.Ua.Client.Controls.DateTimeValueEditDlg;WinForms;Dialogue;Edit DateTime Value;5;0;0;41;5;;0;0;W18;10,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.DiscoverServerDlg;WinForms;Dialogue;Discover Servers;6;4;0;141;14;;0;0;W18;30,4;M;1
+UA Client Controls;Opc.Ua.Client.Controls.DiscoveredServerListCtrl;WinForms;Composant;;0;0;0;206;25;;0;1;W07 W18;26,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.DiscoveredServerListDlg;WinForms;Dialogue;Discover Servers;8;5;0;118;11;;2;0;W18;31,4;M;1
+UA Client Controls;Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListCtrl;WinForms;Composant;;0;0;0;198;21;;0;1;W07 W18;23,7;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.DiscoveredServerOnNetworkListDlg;WinForms;Dialogue;Discover Servers On Network;14;5;0;118;11;;2;0;W18;37,4;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditAnnotationDlg;WinForms;Dialogue;Edit Annotation;10;1;0;55;4;;0;0;W18;17,7;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EditArrayDlg;WinForms;Dialogue;Edit Value;8;4;0;155;16;;0;0;W14 W18;34,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditComplexValue2Dlg;WinForms;Dialogue;Edit Value;13;4;0;240;23;;0;0;W18;48,5;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditComplexValueDlg;WinForms;Dialogue;Edit Value;9;5;0;162;12;;1;0;W18;35,8;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditDataValueCtrl;WinForms;Composant;;20;3;0;248;16;;0;1;W18;50,5;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditDataValueDlg;WinForms;Dialogue;Edit Data Value;5;1;0;63;6;;1;0;W18;14,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EditMonitoredItemDlg;WinForms;Dialogue;Edit Monitored Item;28;1;0;224;28;;1;0;W18;58,9;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditReadValueIdDlg;WinForms;Dialogue;Edit Read Request;14;1;0;192;37;;1;0;W18;47,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EditSubscriptionDlg;WinForms;Dialogue;Edit Subscription;17;1;0;59;2;;0;0;W18;23,9;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EditValue2Ctrl;WinForms;Composant;;1;1;0;59;3;;0;1;W18;8,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EditValueCtrl;WinForms;Composant;;2;2;0;68;7;;0;0;W18;14;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EditWriteValueDlg;WinForms;Dialogue;Edit Write Request;24;4;0;143;24;;2;0;W18;53,5;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EndpointSelectorCtrl;WinForms;Composant;;3;2;0;147;18;;0;0;W18;25,8;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.EventFilterListViewCtrl;WinForms;Composant;;7;4;0;222;26;;1;1;W14 W18;42,8;M;1
+UA Client Controls;Opc.Ua.Client.Controls.EventListView;WinForms;Composant;;4;2;0;520;79;;0;0;W07 W18;82,2;L;2
+UA Client Controls;Opc.Ua.Client.Controls.EventListViewCtrl;WinForms;Composant;;8;4;0;234;29;;1;2;W14 W18;46,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.ExceptionDlg;WinForms;Dialogue;Exception;5;1;0;148;14;;0;0;W18;23,9;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.GdsDiscoverServersDlg;WinForms;Dialogue;Global Directory Service;27;6;0;384;47;;3;0;W18;88,1;L;2
+UA Client Controls;Opc.Ua.Client.Controls.GuiUtils;WinForms;Composant;;0;0;0;391;74;;0;0;W18;63,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.HeaderBranding;WinForms;Composant;;5;3;0;35;2;;0;1;W12 W18;14,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.HistoryDataDlg;WinForms;Dialogue;History Data;1;0;0;57;3;;1;0;W18;6,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.HistoryDataListView;WinForms;Composant;;48;15;0;1440;144;;0;1;W07 W14 W18;246;XL;3
+UA Client Controls;Opc.Ua.Client.Controls.HistoryEventCtrl;WinForms;Composant;;28;9;0;338;25;;1;0;W18;81;L;2
+UA Client Controls;Opc.Ua.Client.Controls.HostListCtrl;WinForms;Composant;;0;0;0;97;9;;0;1;W07 W18;11;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.HostListDlg;WinForms;Dialogue;Discover Hosts;8;5;0;117;11;;2;0;W18;31,3;M;1
+UA Client Controls;Opc.Ua.Client.Controls.NodeIdCtrl;WinForms;Composant;;2;2;0;114;5;;0;1;W18;16,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.NodeIdValueEditDlg;WinForms;Dialogue;Edit NodeId;5;0;0;42;4;;1;0;W18;9,8;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.NodeListCtrl;WinForms;Composant;;3;1;0;154;18;;0;1;W11;24,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.NumericValueEditDlg;WinForms;Dialogue;Edit Numeric Value;5;0;0;109;17;;0;0;W18;20,8;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ReadRequestDlg;WinForms;Dialogue;Read Attribute Values;5;3;0;71;4;;1;0;W18;17,7;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ReadRequestListViewCtrl;WinForms;Composant;;6;5;0;240;27;;0;1;W14 W18;45,5;M;1
+UA Client Controls;Opc.Ua.Client.Controls.ReferenceListCtrl;WinForms;Composant;;1;0;0;119;9;;0;0;W14 W18;13,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ReferenceTypeCtrl;WinForms;Composant;;1;1;0;164;18;;0;1;W18;22,9;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectCertificateStoreCtrl;WinForms;Composant;;1;1;0;38;1;;0;0;W18;6;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectFileCtrl;WinForms;Composant;;1;1;0;62;4;;0;0;W09 W18;9,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectHostCtrl;WinForms;Composant;;3;2;0;134;17;;0;3;W18;24,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectLocaleDlg;WinForms;Dialogue;Select Locale;5;0;0;45;5;;0;0;W18;10,5;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectNodeCtrl;WinForms;Composant;;1;1;0;123;13;;0;5;W18;17,7;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectNodeDlg;WinForms;Dialogue;Select Node;4;0;0;79;10;;1;0;W18;14,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectNodesDlg;WinForms;Dialogue;Select Nodes;10;2;0;56;5;;4;0;W18;20,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectProfileCtrl;WinForms;Composant;;1;1;0;71;7;;0;0;W18;11,2;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectProfileDlg;WinForms;Dialogue;Select Security Profiles;5;0;0;42;5;;0;0;W18;10,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SelectUrlsCtrl;WinForms;Composant;;1;1;0;98;11;;0;0;W18;15;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SetFilterOperatorDlg;WinForms;Dialogue;Set Filter Operator;6;0;0;39;1;;0;0;W18;9,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SetTypeDlg;WinForms;Dialogue;Set Data Type and Array Size;11;1;0;112;13;;1;0;W18;27;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SimpleValueEditDlg;WinForms;Dialogue;Edit Value;6;1;0;73;19;;0;0;W18;22,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.StringValueEditDlg;WinForms;Dialogue;Edit String Value;5;0;0;30;3;;0;0;W18;8,5;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SubscribeDataDlg;WinForms;Dialogue;Data Subscription;5;3;0;97;4;;1;0;W18;19,5;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.SubscribeDataListViewCtrl;WinForms;Composant;;16;8;0;539;61;;0;1;W07 W14 W18;98,4;L;2
+UA Client Controls;Opc.Ua.Client.Controls.SubscribeEventsDlg;WinForms;Dialogue;Event Subscription;24;11;0;751;106;;4;0;W07 W14 W18;149,1;L;2
+UA Client Controls;Opc.Ua.Client.Controls.TypeFieldsListViewCtrl;WinForms;Composant;;3;0;0;132;14;;0;1;W14 W18;18,8;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.UserNamePasswordDlg;WinForms;Dialogue;Enter User Name;8;0;0;32;5;;0;0;W18;12,6;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.UsernameTokenDlg;WinForms;Dialogue;Specify User Name and Password;8;0;0;39;5;;0;0;W18;13,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ViewCertificateDlg;WinForms;Dialogue;View Certificate;25;3;0;219;31;;1;0;W09 W18;61,1;M;1
+UA Client Controls;Opc.Ua.Client.Controls.ViewEventDetailsDlg;WinForms;Dialogue;View Event Details;1;0;0;44;5;;0;0;W18;6,4;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.ViewNodeStateDlg;WinForms;Dialogue;View Node;8;1;0;94;8;;0;0;W14 W18;20,3;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.WriteRequestDlg;WinForms;Dialogue;Write Attribute Values;6;4;0;84;5;;1;0;W18;22,1;S;0,5
+UA Client Controls;Opc.Ua.Client.Controls.WriteRequestListViewCtrl;WinForms;Composant;;7;6;0;296;33;;0;1;W14 W18;55,2;M;1
+UA Client Controls;Opc.Ua.Client.Controls.YesNoDlg;WinForms;Dialogue;Caption;6;0;0;19;0;;0;0;W18;7,3;S;0,5
+Opc.Ua.Samples.WinForms;Opc.Ua.Samples.WinForms.SampleForm;WinForms;Fenetre;;0;0;0;14;0;;0;0;;0,9;S;0,5
+Opc.Ua.Samples.WinForms;Opc.Ua.Samples.WinForms.SampleUserControl;WinForms;Composant;;0;0;0;14;0;;0;0;;0,9;S;0,5
+Reference Client;Quickstarts.ReferenceClient.MainForm;WinForms;Fenetre;Quickstart Reference Client;16;9;0;252;20;;3;0;W09 W12 W18;60,8;M;1
